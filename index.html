@@ -1,19 +1,68 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <!-- css-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/    </head>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-
-    <body>
-
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
-        
+      <body>
+        <div class="row">
+           <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s6"><a class="active" href="#word">WORD</a></li>
+              <li class="tab col s6"><a href="#wordList">WordList</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div id="word" class="col s12">
+            <div class="dark-btn col s12 m6 waves-effect grey lighten-2 waves-light btn">TRANSLATE</div>
+            <h2 class="col s12 m6 center-align">ROBAR</h2>
+            <div class="col s12 remember-btn">
+              <div class="col s6 m6 waves-effect waves-light btn">I REMEMBER</div>
+              <div class="col s6 m6 deep-orange accent-2 waves-effect waves-light btn">I DONT REMEMBER</div>
+            </div>
+            <div class="col s12 punishment">
+              <h3 class="col s12"><i class="medium material-icons deep-orange-text accent-2-text left">mood_bad</i>30 PUSH UPS</h3>
+              <div class="col s12 m6 deep-orange accent-2 waves-effect waves-light btn">PUNISHMENT DONE</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="wordList" class="col s12">
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">
+                  <div class="col s2"><i class="material-icons teal-text text-darken-2">mood</i></div>
+                  <div class="col s8">Robar</div>
+                  <div class="col s3"><i class="material-icons">clear</i></div>
+                </div>
+                <div class="collapsible-body"><span>Stole</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <div class="col s2"><i class="material-icons deep-orange-text text-darken-2">mood_bad</i></div>
+                  <div class="col s8">Perro</div>
+                  <div class="col s3"><i class="material-icons">clear</i></div>
+                </div>
+                <div class="collapsible-body"><span>Dog</span></div>
+              </li>
+            </ul>
+            <div class="fixed-action-btn">
+              <a class="btn-floating waves-effect btn-large teal lighten-1">
+                <i class="large material-icons">add</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--Scrpts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script src="css/style.css"></script>
+      </body>
+    </html>
+          
